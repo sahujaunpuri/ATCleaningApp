@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/progressBar"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/card1"
+                android:elevation="9dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/profile_img"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_ad"/>
+            </android.support.v7.widget.CardView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="24dp"
+                android:id="@+id/profile_name"
+                android:text="Dummy Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/card1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Email"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/email_tv"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/profile_name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="dummydoc@gmail.com"
+                android:gravity="center"
+
+                android:textSize="18dp"
+                android:id="@+id/email"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/email_tv"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Mobile No"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/mobile_tv"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="9900990099"
+                android:gravity="center"
+
+                android:textSize="18dp"
+                android:id="@+id/mobile"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@+id/mobile_tv"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Address"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/address_tv"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/mobile"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/address_tv"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:src="@drawable/location_marker"
+                android:textSize="18dp"
+                android:id="@+id/edit_loc"
+                android:layout_below="@+id/mobile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36/A BTM LAyout; 2nd stage"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="18dp"
+                android:id="@+id/address"
+
+                android:layout_below="@+id/address_tv"/>
+
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/rounded_button3"
+                android:gravity="center"
+                android:text="Save Edits"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="ATC Cleaning"
+            android:textColor="#ffffff"
+
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Get Your House Maintenance Done at ease"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tag"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button3"
+            android:gravity="center_vertical|center"
+            android:text="Sign Up"
+            android:id="@+id/sign_up"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/sign_up"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/do_you"
+            android:text="Do You already have an Account?"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/do_you"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button3"
+            android:gravity="center_vertical|center"
+            android:text="Log In"
+            android:id="@+id/log_in"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</LinearLayout>

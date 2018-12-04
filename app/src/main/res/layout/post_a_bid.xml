@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackA">
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    android:id="@+id/card10">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#b71c1c"
+                        >
+                        <TextView
+                            android:id="@+id/job_status_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:background="#f05545"
+                            android:gravity="center|left"
+                            android:paddingLeft="16dp"
+                            android:text="Project Name"
+                            android:textColor="#FFFFFF" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@id/card10"
+                    android:id="@+id/card1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e35183"
+                        >
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+
+                            android:background="#e35183"
+                            android:gravity="center|left"
+                            android:paddingLeft="16dp"
+                            android:text="Tell User about Your Proposal"
+                            android:textColor="#FFFFFF" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/add1"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:layout_toRightOf="@+id/title"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/title_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/card1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ff5252"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ff5252">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="top"
+                            android:id="@+id/input_proposal"
+                            android:hint="Start Tying Here!"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@+id/title_card"
+                    android:id="@+id/card2">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e35183"
+                        >
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+
+                            android:background="#e35183"
+                            android:gravity="center|left"
+                            android:paddingLeft="16dp"
+                            android:text="What Extra Services You can offer to Client?"
+                            android:textColor="#FFFFFF" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/add2"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:layout_toRightOf="@+id/description"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/description_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/card2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ff5252"
+                    android:elevation="12dp"
+
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ff5252">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="top"
+                            android:hint="Start Tying Here!"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/support_input"
+                            android:textColorHint="#FFFFFF" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@+id/description_card"
+                    android:id="@+id/card3">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e35183"
+                        >
+                        <TextView
+                            android:id="@+id/client_ques"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+
+                            android:background="#e35183"
+                            android:gravity="center|left"
+                            android:paddingLeft="16dp"
+                            android:text="Do You have any Question for Client?"
+                            android:textColor="#FFFFFF" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/add3"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:layout_toRightOf="@+id/client_ques"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/card4"
+                    android:layout_below="@+id/card3"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ff5252"
+                            android:hint="Start Typing Here!"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:id="@+id/client_info"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/card5"
+                    android:layout_below="@+id/card4"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="#ff5252"
+                            android:text="Please Enter Bid Amount"
+                            android:textColor="#FFFFFF"
+                            android:gravity="left|center"
+                            android:id="@+id/bid_textView"/>
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="#e35183"
+                            android:text="0.0"
+                            android:layout_toRightOf="@+id/bid_textView"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="8dp"
+                            android:gravity="left|center"
+                            android:id="@+id/bid_amt_entered"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/card6"
+                    android:layout_below="@+id/card5"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="#ff5252"
+                            android:text="Please Enter Bidding Days"
+                            android:textColor="#FFFFFF"
+                            android:gravity="left|center"
+                            android:id="@+id/bid_days_textView"/>
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="#e35183"
+                            android:text="1"
+                            android:layout_toRightOf="@+id/bid_days_textView"
+                            android:textColor="#FFFFFF"
+                            android:paddingLeft="8dp"
+                            android:gravity="left|center"
+                            android:id="@+id/bid_days_entered"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@+id/card6"
+                    android:id="@+id/card7">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e35183"
+                        >
+                        <TextView
+                            android:id="@+id/milestone_text"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+
+                            android:background="#e35183"
+                            android:gravity="center|left"
+                            android:paddingLeft="16dp"
+                            android:text="Propose Your Milestone Payments"
+                            android:textColor="#FFFFFF" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/add4"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:layout_toRightOf="@+id/milestone_text"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/card8"
+                    android:layout_below="@+id/card7"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ff5252"
+                            android:text="Start Typing Here!"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/milestone_proposal"/>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/post_now"
+                    android:text="Bid Now"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/card8"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center|center_horizontal"
+                    android:background="@drawable/rounded_button3"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>

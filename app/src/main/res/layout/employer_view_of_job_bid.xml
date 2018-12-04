@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blackA">
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blackA"
+                    >
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/blackA"
+
+                            >
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+
+                        android:id="@+id/card10">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ff6e40"
+                            >
+                            <TextView
+                                android:id="@+id/job_status_des"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+
+                                android:background="#ff6e40"
+                                android:gravity="center|left"
+                                android:paddingLeft="16dp"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+
+                                android:text="Project Status"
+                                android:textColor="#FFFFFF" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_below="@id/card10"
+                        android:id="@+id/card1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#c53d13"
+                            >
+                            <TextView
+                                android:id="@+id/details"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+
+                                android:background="#c53d13"
+                                android:gravity="center|left"
+                                android:paddingLeft="16dp"
+                                android:text="Contractor Details"
+                                android:textColor="#FFFFFF" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/details_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/card1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#ffa06d"
+                        android:elevation="12dp"
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d">
+                            <professional.service.corporate.com.atcleaningapp.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:id="@+id/circleView"
+                                android:src="@drawable/patient_male"
+                                android:layout_marginLeft="8dp"
+                                android:layout_centerVertical="true"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/circleView"
+                                android:backgroundTint="@android:color/transparent"
+                                android:gravity="top"
+                                android:id="@+id/details_inputted"
+                                android:hint="Here it is!"
+                                android:textColor="#FFFFFF"
+                                android:textColorHint="#FFFFFF" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_below="@+id/details_card"
+                        android:id="@+id/card2">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#c53d13"
+                            >
+                            <TextView
+                                android:id="@+id/proposal"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+
+                                android:background="#c53d13"
+                                android:gravity="center|left"
+                                android:paddingLeft="16dp"
+                                android:text="Proposal About the Work"
+                                android:textColor="#FFFFFF" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/proposal_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/card2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#ffa06d"
+                        android:elevation="12dp"
+
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:gravity="top"
+                                android:hint="Here We Go!"
+                                android:id="@+id/proposal_inputted"
+                                android:textColor="#FFFFFF"
+                                android:textColorHint="#FFFFFF" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/card4"
+                        android:layout_below="@+id/proposal_card"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:text="Extra Services By Contractor"
+                                android:textColor="#FFFFFF"
+
+                                android:id="@+id/dropdown_text"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/dropdown_text"
+                                android:id="@+id/extra_services_inputted"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/card5"
+                        android:layout_below="@+id/card4"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:text="Questions For Employer"
+                                android:textColor="#FFFFFF"
+
+                                android:id="@+id/questions_text"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:text="2"
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/questions_text"
+                                android:id="@+id/questions_inputted"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/card6"
+                        android:layout_below="@+id/card5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="#ffa06d"
+                                android:text="Bid Amount"
+                                android:textColor="#FFFFFF"
+
+                                android:id="@+id/bid_amt_inputted_text"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:id="@+id/bid_amt_inputted_inputted"
+
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/bid_amt_inputted_text"
+                                ></TextView>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="#ffa06d"
+                                android:text="Bid Days"
+                                android:textColor="#FFFFFF"
+
+                                android:id="@+id/bid_text_inputted_text"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:id="@+id/bid_text_inputted_days"
+
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/bid_text_inputted_text"
+                                ></TextView>
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/card7"
+                        android:layout_below="@+id/card6"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffa06d"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:text="Milestone Created By Employer"
+                                android:textColor="#FFFFFF"
+
+                                android:id="@+id/milestone_text"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+
+                                android:text="2"
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/milestone_text"
+                                android:id="@+id/milestones_inputted"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/reject"
+                        android:text="Reject"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/card7"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/rounded_button4"/>
+
+                    <TextView
+                        android:id="@+id/accept"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/reject"
+                        android:layout_marginEnd="30dp"
+
+                        android:background="@drawable/rounded_button5"
+                        android:gravity="center"
+                        android:text="Accept"
+                        android:textColor="#FFFFFF"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:id="@+id/awarded_button"
+                                android:text="Already Awarded"
+                                android:textColor="#FFFFFF"
+                                android:layout_below="@+id/card7"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:layout_marginLeft="8dp"
+                                android:background="@drawable/rounded_button3"/>
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="@color/blackA">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#006400"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Saved Address By You"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/address_lv"
+        android:dividerHeight="5dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:nestedScrollingEnabled="true"
+        android:backgroundTint="@android:color/transparent"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#006400"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:id="@+id/add"
+        android:text="Add A New Address"/>
+
+</LinearLayout>

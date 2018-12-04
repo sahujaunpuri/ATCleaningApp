@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "948343076940",
+    "firebase_url": "https://atcleaningapp.firebaseio.com",
+    "project_id": "atcleaningapp",
+    "storage_bucket": "atcleaningapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948343076940:android:c23fe20e4da29ba9",
+        "android_client_info": {
+          "package_name": "professional.service.corporate.com.atcleaningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948343076940-opp4qkv7ikludvua0qqbchh1lq0mj58e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "professional.service.corporate.com.atcleaningapp",
+            "certificate_hash": "b5db78d1e15e6d8fb6e90d06301769fddb34fe99"
+          }
+        },
+        {
+          "client_id": "948343076940-qfl8vspfge4ptchs114n1th7ghpkce26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaPqB_4MNFxYU93fPIsNOEeTXx337dkmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948343076940-qfl8vspfge4ptchs114n1th7ghpkce26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

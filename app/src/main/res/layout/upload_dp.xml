@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|center_horizontal"
+
+        >
+
+
+
+
+        <Button
+            android:id="@+id/buttonChoose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/ic_add_black_24dp"
+            android:gravity="center|center_horizontal"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Upload A Photo"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/attach"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/buttonChoose"
+
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/prompt"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Please Select An Image First"
+        android:textColor="@color/red1"/>
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center|center_horizontal"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/coral_blue"
+        android:text="Upload" />
+    <ProgressBar android:layout_width = "100dp"
+        android:layout_height="100dp"
+        android:id="@+id/progressBar"
+        android:visibility= "gone"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

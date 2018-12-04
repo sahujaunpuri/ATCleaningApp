@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Choose Recipient Email"
+        android:textColor="@color/coral_blue"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/recepient"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+
+            android:visibility="gone"
+            android:background="@drawable/custom_edittext"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/recepient_tv"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_edittext"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/recepient_tv"
+            android:background="@drawable/iedit"
+            android:id="@+id/edit_rec"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/recepient"
+            android:background="@drawable/check"
+            android:visibility="gone"
+            android:id="@+id/done_text"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/recepient"
+        android:text="Release Now!"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button2"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:id="@+id/button1"
+        android:layout_below="@+id/recepient"
+        android:text="Release Now!"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button2"
+        android:gravity="center"/>
+</LinearLayout>

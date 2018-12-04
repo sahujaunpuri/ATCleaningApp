@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="professional.service.corporate.com.atcleaningapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContractorRegister"/>
+        <activity android:name=".NavigationBarUser"/>
+        <activity android:name=".DetermineUser"></activity>
+        <activity android:name=".ForgotPass"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginSelection"></activity>
+        <activity android:name=".SuccessActivty"></activity>
+        <activity android:name=".UploadProfilePIc"></activity>
+        <activity android:name=".UserRegister"></activity>
+        <activity android:name=".NavigationBarContractors"/>
+        <activity android:name=".PendingConfirmation"/>
+        <activity android:name=".AttachedFilesForProject"/>
+        <activity android:name=".PayPalActivity"/>
+        <activity android:name=".PayPalActivity2"/>
+        <activity android:name=".SuccessActivty1"/>
+        <activity android:name=".SuccessActivity1"/>
+        <activity android:name=".PaypalState"/>
+        <activity android:name=".UsePhoto"/>
+        <activity android:name=".UsePhoto1"/>
+        <activity android:name=".UsePhoto2"/>
+        <activity android:name=".UsePhoto3"/>
+        <activity android:name=".UsePhoto4"/>
+        <activity android:name=".AddressList"/>
+        <activity android:name=".UsePhoto5"/>
+        <activity android:name=".DetermineUser1"/>
+        <activity android:name=".PostABidJob"/>
+        <activity android:name=".ViewDetailsActivity"/>
+        <activity android:name=".AllAvailableJobs"/>
+        <activity android:name=".SuccessActivty1"/>
+        <activity android:name=".MainIntroActivity"/>
+        <activity android:name=".RatingSuccess"/>
+        <activity android:name=".SuccessActivty2"/>
+        <activity android:name=".ShareCurrentLocation"/>
+        <service
+            android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBaPqB_4MNFxYU93fPIsNOEeTXx337dkmQ"/>
+
+    </application>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

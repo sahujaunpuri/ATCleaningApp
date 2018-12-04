@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="#ffa040"
+        android:elevation="12dp"
+        app:cardCornerRadius="9dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffa040">
+        <professional.service.corporate.com.atcleaningapp.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/circleView"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/patient_male"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/client_name"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="Client Name Goes Here"
+            android:gravity="center|left"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/circleView"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/location_img"
+            android:layout_toRightOf="@+id/circleView"
+            android:layout_below="@+id/client_name"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/location_marker"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/client_location"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="Location Goes Here"
+            android:gravity="center|left|top"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/client_name"
+            android:layout_toRightOf="@+id/location_img"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/amount_payable"
+            android:textColor="#FFFFFF"
+            android:text="Amount Payable"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/circleView"
+            android:layout_below="@+id/client_location"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/amount_payable_number"
+            android:textColor="#FFFFFF"
+            android:text="$10000"
+            android:gravity="center|left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/amount_payable"
+            android:layout_below="@+id/client_location"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/work"
+            android:textColor="#FFFFFF"
+            android:text="Work"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/circleView"
+            android:layout_below="@+id/amount_payable"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/work_details"
+            android:textColor="#FFFFFF"
+            android:text="See Details"
+            android:gravity="center"
+
+            android:background="@drawable/rounded_button3"
+            android:layout_toRightOf="@+id/work"
+            android:layout_below="@+id/amount_payable"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/work_to_be_done"
+            android:textColor="#FFFFFF"
+            android:text="Work title Goes Here"
+            android:gravity="center|left|top"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/work_details"
+            android:layout_below="@+id/amount_payable"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Mark This Job Finished"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/mark_finished"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/gradient_background_green"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

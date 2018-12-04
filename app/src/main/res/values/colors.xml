@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c62828</color>
+    <color name="colorPrimaryDark">#ff5f52</color>
+    <color name="colorAccent">#8e0000</color>
+    <color name="colorP">#ad1457</color>
+    <color name="colorPD">#78002e</color>
+    <color name="colorA">#e35183</color>
+    <color name="colorPl">#d32f2f</color>
+    <color name="colorPDl">#9a0007</color>
+    <color name="colorAl">#e53935</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="red1">#FA054B</color>
+    <color name="coral_blue">#1DAEFA</color>
+    <color name="blackP">#212121</color>
+    <color name="blackA">#484848</color>
+    <color name="blackD">#000000</color>
+    <color name="colorControlNormal">#FFFF00</color>
+    <color name="colorControlActivated">#FFA500</color>
+    <color name="highlight_list">#616161</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="color_material_metaphor">#039BE5</color>
+    <color name="color_material_bold">#EC407A</color>
+    <color name="color_material_motion">#6A1B9A</color>
+    <color name="color_material_shadow">#E0E0E0</color>
+    <color name="color_permissions">#FFEB3B</color>
+    <color name="color_custom_fragment_1">#E64A19</color>
+    <color name="color_custom_fragment_2">#3F51B5</color>
+    <color name="color_canteen">#fdfdfd</color>
+
+    <color name="color_dark_material_metaphor">#0277BD</color>
+    <color name="color_dark_material_bold">#D81B60</color>
+    <color name="color_dark_material_motion">#4A148C</color>
+    <color name="color_dark_material_shadow">#BDBDBD</color>
+    <color name="color_dark_permissions">#FBC02D</color>
+    <color name="color_dark_custom_fragment_1">#BF360C</color>
+    <color name="color_dark_custom_fragment_2">#303F9F</color>
+    <color name="color_dark_canteen">#ebeef0</color>
+    <color name="blue_grey">#607d8b</color>
+    <color name="emphasis">#31b6e7</color>
+    <color name="blue1">#25A89E</color>
+    <color name="blue2">#0FC8CB</color>
+    <color name="blue3">#0A9C9E</color>
+    <color name="blue4">#0770A9</color>
+    <color name="blue5">#0D3354</color>
+    <color name="green2">#1A9E42</color>
+    <color name="purple1">#6712AA</color>
+    <color name="magentaPink1">#F634E7</color>
+    <color name="magentaPink2">#E629B8</color>
+    <color name="pink1">#E8478B</color>
+    <color name="almostWhite">#EEEEEE</color>
+    <color name="redpink1">#E84775</color>
+    <color name="bronRed">#AF234B</color>
+    <color name="red2">#E83A3D</color>
+    <color name="red3">#B41114</color>
+    <color name="orangeDark">#F9AE02</color>
+    <color name="orange1">#F8721B</color>
+    <color name="yellow1">#FCF003</color>
+    <color name="orange3">#FC2F05</color>
+    <color name="blue6">#0A9694</color>
+    <color name="green6">#008000</color>
+    <color name="darkGreen">#023E22</color>
+    <color name="black1">#666666</color>
+    <color name="black2">#7f7f7f</color>
+    <color name="black3"> #999999</color>
+    <color name ="deep_sky_blue">#00BFFF</color>
+    <color name="blue">#00abea</color>
+
+    <color name="light_gray">#ABBAC2</color>
+    <color name="text_gray">#6B767D</color>
+    <color name="dark_blue">#125D9D</color>
+    <color name="darkgrey">#757575</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="middlegrey">#A8A8A8</color>
+    <color name="yellow">#f6d126</color>
+    <color name="green">#388E3C</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen">#026499</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen">#448bb2</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+
+    <color name="circleProgressCompleteStartGradient">@color/dark_blue</color>
+    <color name="circleProgressCompleteEndGradient">@color/coral_blue</color>
+    <color name="circleProgressIncompleteStartGradient">@color/light_gray</color>
+    <color name="circleProgressIncompleteEndGradient">@color/light_gray</color>
+    <color name="default_background_color">@android:color/transparent</color>
+    <color name="default_progress_color">#33b5e5</color>
+    <color name="default_stroke_color">#33b5e5</color>
+    <color name="default_text_color">#333333</color>
+    <color name="list_even">#AAAAAA</color>
+    <color name="list_odd">#E1E2E2</color>
+    <color name="list_selected">#455FB6</color>
+    <color name="list_header">#99979C</color>
+    <array name="colors">
+        <item> @color/green</item>
+        <item >@color/blue1</item>
+        <item >@color/blue2</item>
+        <item >@color/blue3</item>
+        <item> @color/deep_sky_blue</item>
+    </array>
+    <color name="btn_bg_checkout">#428bca</color>
+    <color name="list_divider">#dedede</color>
+
+    <color name="lbl_product_name">#333333</color>
+    <color name="lbl_product_description">#444444</color>
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="textColorPrimary">#3a414d</color>
+    <color name="textColorLight">#6f7c92</color>
+
+    <!-- Login -->
+    <color name="colorButton">#774df2</color>
+
+    <!-- Open Chat -->
+    <color name="openChatText">#47505d</color>
+    <color name="openChatNicknameOther">#3a414d</color>
+    <color name="openChatNicknameMe">#00BCD4</color>
+
+    <!-- Group Chat -->
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+
+    <color name="groupChatAdminBackground">#e0fcff</color>
+    <color name="groupChatAdminText">#39474e</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#7d62df</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+    <!-- Selector -->
+    <color name="btn_create">#ffffff</color>
+    <color name="btn_create_disabled">#c1acff</color>
+    <color name="btn_edit">#ffffff</color>
+    <color name="btn_edit_disabled">#c1acff</color>
+    <color name="btn_send">#774df2</color>
+    <color name="btn_send_disabled">#8e8e8e</color>
+</resources>

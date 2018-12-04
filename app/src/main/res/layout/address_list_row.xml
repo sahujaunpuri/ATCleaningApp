@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorPD"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/building"
+        android:text="Building Number"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/building_name"
+        android:layout_below="@+id/building"
+        android:text="Building Name"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/street1"
+        android:text="Street"
+        android:gravity="left|center"
+        android:layout_below="@+id/building_name"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/state"
+        android:layout_below="@+id/street1"
+        android:text="State"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/landmark"
+        android:layout_below="@+id/state"
+        android:text="Landmark"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/city"
+        android:layout_below="@+id/landmark"
+        android:text="City"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/zip"
+        android:layout_below="@+id/city"
+        android:text="Zip"
+        android:gravity="left|center"
+        android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

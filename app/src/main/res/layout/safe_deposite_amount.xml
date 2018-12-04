@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blackA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/card_completion"
+
+            android:layout_marginTop="16dp"
+            android:background="@color/blackA"
+            app:cardCornerRadius="9dp"
+            android:elevation="9dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blackA"
+               >
+                <professional.service.corporate.com.atcleaningapp.CircleImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+
+                    android:id="@+id/circleView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Work Completed For"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/work"
+                    android:layout_toRightOf="@+id/circleView"
+                    android:background="@color/blackD"
+                    android:gravity="center|left"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Title goes Here"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/circleView"
+                    android:id="@+id/title_of_project"
+                    android:layout_below="@+id/work"
+                    android:gravity="center|left|top"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Contractor Name"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/total"
+                    android:layout_below="@+id/title_of_project"
+                    android:background="@color/blackD"
+                    android:gravity="center|left"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Title goes Here"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/name"
+                    android:layout_below="@+id/total"
+                    android:gravity="center|left|top"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Total amount to be Paid"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/total_amt"
+                    android:layout_below="@+id/name"
+                    android:background="@color/blackD"
+                    android:gravity="center|left"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Title goes Here"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/amt"
+                    android:layout_below="@+id/total_amt"
+                    android:gravity="center|left|top"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Safe Deposit Paid"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/sd_amt"
+                    android:layout_below="@+id/amt"
+                    android:background="@color/blackD"
+                    android:gravity="center|left"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/amt_paid"
+                    android:layout_below="@+id/sd_amt"
+                    android:gravity="center|left|top"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Safe Deposit Amount"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/sd_amt_p"
+                    android:layout_below="@+id/amt_paid"
+                    android:background="@color/blackD"
+                    android:gravity="center|left"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="8dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/amt_paid_p"
+                    android:layout_below="@+id/sd_amt_p"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/amt_paid_p"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/productImage"
+                    android:background="@color/green"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

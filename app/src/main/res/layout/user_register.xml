@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/background_main_page"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/background_main_page"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/rl1"
+            >
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="ATC Cleaning App"
+                android:textColor="#ffffff"
+
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/heading"
+                android:gravity="center"
+                android:text="Get Your House cleaning at ease"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="48dp"
+
+
+            android:elevation="9dp"
+            app:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_login_portion"
+                >
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="16dp"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+
+                    android:textColorHint="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/email"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="16dp"
+                    android:inputType="textPassword"
+                    android:hint=" Password"
+                    android:textColorHint="#FFFFFF" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="16dp"
+                    android:layout_below="@+id/password"
+                    android:hint="Full Name"
+
+                    android:textColorHint="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="16dp"
+                    android:hint=" Mobile No"
+                    android:textColorHint="#FFFFFF" />
+                <EditText
+                    android:id="@+id/occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/phone"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/work"
+                    android:drawablePadding="16dp"
+                    android:hint="Occupation"
+                    android:textColorHint="#FFFFFF" />
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/occupation"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/gender"
+                    android:drawablePadding="16dp"
+                    android:hint="Gender"
+                    android:gravity="center|left"
+                    android:textColorHint="#FFFFFF" />
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_below="@+id/gender"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+              
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/radioGroup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/rounded_button3"
+                    android:gravity="center"
+                    android:id="@+id/sign_up"
+                    android:text="Sign Up"
+
+                    android:textColor="#FFFFFF" />
+                <ProgressBar
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/progress_bar_login"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

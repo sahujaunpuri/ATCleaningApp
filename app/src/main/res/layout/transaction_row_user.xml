@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffa040"
+        android:elevation="12dp"
+        app:cardCornerRadius="9dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffa040">
+            <professional.service.corporate.com.atcleaningapp.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/circleView"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/patient_male"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/client_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="Contractor Name Goes Here"
+                android:gravity="center|left"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/circleView"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/amount_payable"
+                android:textColor="#FFFFFF"
+                android:text="Amount Paid"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/circleView"
+                android:layout_below="@+id/client_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/amount_payable_number"
+                android:textColor="#FFFFFF"
+                android:text="$10000"
+                android:gravity="center|left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/amount_payable"
+                android:layout_below="@+id/client_name"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:id="@+id/work"
+                android:textColor="#FFFFFF"
+                android:text="Work"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/circleView"
+                android:layout_below="@+id/amount_payable"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/work_details"
+                android:textColor="#FFFFFF"
+                android:text="See Details"
+                android:gravity="center"
+
+                android:background="@drawable/rounded_button3"
+                android:layout_toRightOf="@+id/work"
+                android:layout_below="@+id/amount_payable"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/work_to_be_done"
+                android:textColor="#FFFFFF"
+                android:text="Work title Goes Here"
+                android:gravity="center|left|top"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/work_details"
+                android:layout_below="@+id/amount_payable"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/date_paid"
+                android:textColor="#FFFFFF"
+                android:text="Payment Date"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/circleView"
+                android:layout_below="@+id/work_to_be_done"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/date"
+                android:textColor="#FFFFFF"
+                android:text="19/10/2018"
+                android:gravity="center|left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/amount_payable"
+                android:layout_below="@+id/work_to_be_done"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

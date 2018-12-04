@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_page">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="ATC House Cleaning"
+            android:textColor="#ffffff"
+
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Get Your House Cleaning Done at ease!"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/selection"
+            android:elevation="9dp"
+            android:layout_below="@+id/tag"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center|center_vertical"
+
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="12dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background = "@drawable/background_login_portion"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/user_type"
+                    android:textColorHint="#FFFFFF"
+                    android:text="Please Select User Type"
+                    android:gravity="center|left"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginLeft="16dp"
+                    android:drawablePadding="16dp"
+                    android:layout_marginRight="16dp"
+                     />
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_below="@+id/user_type"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/doctor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/patients"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contractors"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/next"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/selection"
+            android:background="@drawable/rounded_button3"/>
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

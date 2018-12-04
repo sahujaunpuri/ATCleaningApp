@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="My Account">
+            <menu>
+                <item
+                    android:id="@+id/nav_contractor"
+                    android:icon="@drawable/user_ad"
+                    android:title="My Profile"
+                    />
+            </menu>
+        </item>
+        <item android:title="Manage Works">
+            <menu>
+                <item
+                    android:id="@+id/nav_dashboard_c"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Awarded Works"/>
+                <item
+                    android:id="@+id/nav_bid_c"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Search A Job"/>
+            </menu>
+        </item>
+        <item android:title="My Works">
+            <menu>
+                <item
+                    android:id="@+id/nav_history_c"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Work History"/>
+                <item
+                    android:id="@+id/nav_apt_c"
+                    android:icon="@drawable/appointment_ad"
+                    android:title="My Bookings"/>
+            </menu>
+        </item>
+        <item android:title="My Bids">
+            <menu>
+                <item
+                    android:id="@+id/nav_bids"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Bids History"/>
+
+            </menu>
+        </item>
+
+        <item android:title="My Payments">
+            <menu>
+                <item
+                    android:id="@+id/nav_transaction_c"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Transaction History"/>
+            </menu>
+        </item>
+
+
+    </group>
+
+    <item android:title="Manage Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout_c"
+                android:icon="@drawable/logout_ad"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+</menu>

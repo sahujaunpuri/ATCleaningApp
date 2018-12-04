@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="My Account">
+            <menu>
+                <item
+                    android:id="@+id/nav_user"
+                    android:icon="@drawable/user_ad"
+                    android:title="My Profile"
+                    />
+            </menu>
+        </item>
+        <item android:title="Manage Works">
+            <menu>
+                <item
+                    android:id="@+id/nav_dashboard"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Dashboard"/>
+                <item
+                    android:id="@+id/nav_bid"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Post A Job"/>
+            </menu>
+        </item>
+        <item android:title="My Works">
+            <menu>
+                <item
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Work History"/>
+                <item
+                    android:id="@+id/nav_apt"
+                    android:icon="@drawable/appointment_ad"
+                    android:title="My All Works"/>
+            </menu>
+        </item>
+
+        <item android:title="My Payments">
+            <menu>
+                <item
+                    android:id="@+id/nav_transaction"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Transaction History"/>
+                <item
+                    android:id="@+id/nav_pay_to"
+                    android:icon="@drawable/dashboard_ad"
+                    android:title="Pay To Contractors"/>
+            </menu>
+        </item>
+
+
+    </group>
+
+    <item android:title="Manage Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_ad"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+</menu>

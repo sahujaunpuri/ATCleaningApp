@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/action_items"
+    android:background="@color/red1"
+    android:textColor="#FFFFFF"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
